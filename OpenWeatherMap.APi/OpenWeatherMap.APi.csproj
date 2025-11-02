@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenWeatherMap.Application\OpenWeatherMap.Application.csproj" />
+    <ProjectReference Include="..\OpenWeatherMap.Domain\OpenWeatherMap.Domain.csproj" />
+    <ProjectReference Include="..\OpenWeatherMap.Infrastructure\OpenWeatherMap.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
